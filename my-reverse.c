@@ -11,13 +11,13 @@ int action(){
   printf("逆から表示すると、");
   
   int i,count;
-	for (i = 0; str[i] != '\0'; i++){
-		count++;
-	}
-
-	for (i=count - 1; i>= 0; i--){
-		printf("%c", str[i]);
-	}
+  for (i = 0; str[i] != '\0'; i++){
+    count++;
+  }
+  
+  for (i=count - 1; i>= 0; i--){
+    printf("%c", str[i]);
+  }
   
   printf("です。");
   return 0;
