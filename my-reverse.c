@@ -5,18 +5,19 @@ int len;
 char str[20];
 char rev[20];
 
-int action(){
-  len = strlen(str);
-  printf("\"%s\" の長さは %dです。\n", str, len);
+int action(char n[]){
+  len = strlen(n);
+  printf("\"%s\" の長さは %dです。\n", n, len);
   printf("逆から表示すると、");
   
   int i,count;
-  for (i = 0; str[i] != '\0'; i++){
+  for (i = 0; n[i] != '\0'; i++){
     count++;
   }
   
   for (i=count - 1; i>= 0; i--){
-    printf("%c", str[i]);
+    rev[count] = n[i];
+    printf("%c",rev[count]);
   }
   
   printf("です。");
@@ -26,7 +27,7 @@ int action(){
 int main(){
   printf("文字列を入力してください。");
 	scanf("%s",str);
-	action();
+	action(str);
 	return 0;
 }
 
