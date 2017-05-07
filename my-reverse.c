@@ -3,7 +3,6 @@
 
 int len;
 char str[20];
-char rev[20];
 
 int action(char n[]){
   len = strlen(n);
@@ -16,11 +15,10 @@ int action(char n[]){
   }
   
   for (i=count - 1; i>= 0; i--){
-    rev[count] = n[i];
-    printf("%c",rev[count]);
+    printf("%c",n[i]);
   }
   
-  printf("です。");
+  printf("です。\n");
   return 0;
 }
 
