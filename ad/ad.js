@@ -9,7 +9,7 @@ function start(){
   alert(rand);
   alert(kind[1]);
 
-//  document.getElementById('2').innerHTML = "<img src="bitcoin1/bitcoin1-001.jpg">";
+  document.getElementById('2').innerHTML = "<img src=\"bitcoin1/bitcoin1-001.jpg\">";
   //" <img src=" "+ kind[0] + 1 + "-00" + 1 +".jpg";
  
 
