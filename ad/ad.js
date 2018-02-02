@@ -13,7 +13,6 @@ function start(){
   for(j=1;j<4;j++){
     word = kind[j-1];
     for(k=1;k<10;k++){
-      rand.push(k);
       document.getElementById(j).innerHTML += "<img src=\""+ word + j + "/" + word + j + "-00" + k +".jpg>";
      /* if(k== 3 || 6){
         document.getElementById(j).innerHTML += </br>;
