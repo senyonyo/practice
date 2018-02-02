@@ -1,3 +1,5 @@
+document.cookie.split("; ").map(it =>(it.split("="))).filter(it => it[0]=="session"?true:false).length ? 0 : (document.cookie="session="+Math.random())
+
 var rand =[];
 var kind =[ 'bitcoin','love','car'];
 var data= { 
